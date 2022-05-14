@@ -87,13 +87,14 @@
   .name-hero h1
   {
       font-family:Open Sans, sans-serif;
-      font-size:1.5em;
+      font-size:1.8em;
       text-align:center;
   }
   
   .name-hero h1 em
   {
       color:rgba(0,0,0,.3);
+      font-size:1.8em;
       font-style:normal;
       font-weight:700;
   }
@@ -101,7 +102,7 @@
   .name-hero p
   {
       color:rgba(0,0,0,.75);
-      font-size:.80em;
+      font-size:.90em;
       line-height:1.5;
       margin:0 8px 0 0;
       text-align:center;
