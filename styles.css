@@ -85,6 +85,13 @@
     text-decoration-color: var(--text);
   }
   
+  .contact a:focus-visible,
+  .download-link:focus-visible {
+    outline: 2px solid var(--text);
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+  
   .download-link {
     font-size: 0.875rem;
     font-weight: 500;
