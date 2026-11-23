@@ -1,89 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Haida Leung</title>
-	<link rel="stylesheet" type="text/css" href="./styles.css">
-<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic|Open+Sans:300,400,500,700|Waiting+for+the+Sunrise|Shadows+Into+Light' rel='stylesheet' type='text/css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Haida Leung — General Practitioner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+  <main class="page">
 
-
-
-<div class="wrapper clearfix">
-<div class="left">
-    
-    <div class="name-hero">
-      
-      <!-- <div class="me-img"></div> -->
-      
-      <div class="name-text">
-        
-        <h1>Haida <em>Leung</em></h1>
-        <p>General Practitioner</p> 
-        <p>MBchB(Otago), FRNZCGP</p>
-        <p>NZMC 28817</p>  
-        <p>hello@leung.nz</p> 
+    <header class="header">
+      <div class="identity">
+        <h1>Haida Leung</h1>
+        <p class="subtitle">General Practitioner &middot; MBChB (Otago), FRNZCGP</p>
+        <div class="contact">
+          <a href="mailto:hello@leung.nz">hello@leung.nz</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <a href="tel:+64211353848">+64 21 135 3848</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <span>Auckland, New Zealand</span>
+        </div>
       </div>
-      
-        <a href="./files/haida_leung_cv.pdf" target="_blank" style="margin-top:1em;">download CV</a>
-        <a class="btn lightbox-223441635150043" style="margin-top: 1em">Message me</a>       
-    </div>
-    
-  </div>
- <div class="right">
-    
-    <div class="inner">
-      <section>
-        <h1>Experience</h1>
-        <p>2010-Today <em>Practice owner | GP</em></p>
-        <p>Dominion Medical Centre, Mt Roskill, Auckland. Well respected clinic within the Chinese community. Clinic population 7500 with 4 Doctors and 8 staff members. </p>
-        <p>2004-2010 <em>Locum GP</em></p>
-        <p>Various GP clinics across Auckland and Wellington </p>
-        <p>2000-2004 <em>House Officer</em></p>
-        <p>Auckland, North Shore, Waitakere, Middlemore hospital</p>
-      </section>
-  
-      <section>
-        <h1>Qualifications</h1>
-        <p>2008 <em>Fellow of the Royal New Zealand College of General Practitioners</em></p>
-        <p>2001 <em>Hong Kong Medical Council Full Registration </em></p>
-        <p>2000 <em>Bachelor of Medicine and Bachelor of Surgery,University of Otago, Dunedin, New Zealand</em></p>
-      </section>
-      <section>
-        <h1>Skills</h1>
-        <p><em>Languages</em></p>
-        <p>Fluent in English,Mandarin and Cantonese. 20+ years of treating Chinese population with deep understanding of their cultural needs.</p>
-        <p><em>Clinical</em></p>
-        <p>Minor sin surgery, cosmetic botox injections</p>
-        <p><em>Tech</em></p>
-        <p>Linux server, networking. Setup, managed and supported clinic IT system. Leveraged free and open source software, resulting in significantly reduced ongoing costs. </p>
-        <p>Built clinic website and self hosted(www.dominionmedical.co.nz), office intranet and vaccine inventory web app.</p>
-        <p>Automation with internet of things hardware and software.</p>
-      </section>
 
-    </div>
-    
-  </div>
-  
-  
-  
-</div>
+      <div class="actions no-print">
+        <a href="files/haida-leung-cv.pdf" class="btn btn-primary" download>Download PDF</a>
+        <button type="button" class="btn" onclick="window.print()">Print</button>
+      </div>
+    </header>
 
-<script src ="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script>
-<script type="text/javascript">
-    var JFL_223441635150043 = new JotformFeedback({
-      formId: '223441635150043',
-      base: 'https://form.jotform.com/',
-      windowTitle: 'Message me',
-      background: '#FFA500',
-      fontColor: '#FFFFFF',
-      type: 'false',
-      height: 500,
-      width: 700,
-      openOnLoad: false
-    });
-</script>
- 
+    <section class="section">
+      <h2>Experience</h2>
+
+      <article class="entry">
+        <div class="meta">2010 &ndash; Present</div>
+        <div class="details">
+          <h3>Practice Owner</h3>
+          <p class="org">Dominion Medical Centre &middot; Mt Roskill, Auckland</p>
+          <p class="desc">
+            Well-respected clinic serving the Chinese community with an enrolled population of 7,500, 5 doctors, and 8 staff. Managed clinic operations, staffing, and IT infrastructure&mdash;implementing open-source systems and internal tools to significantly reduce ongoing overhead.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="meta">2004 &ndash; 2010</div>
+        <div class="details">
+          <h3>Locum Doctor</h3>
+          <p class="org">Various GP Clinics &middot; Auckland &amp; Wellington</p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="meta">2000 &ndash; 2004</div>
+        <div class="details">
+          <h3>House Officer</h3>
+          <p class="org">Auckland, North Shore, Waitakere, and Middlemore Hospitals</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Qualifications</h2>
+
+      <article class="entry">
+        <div class="meta">2008</div>
+        <div class="details">
+          <h3>Fellow of the Royal New Zealand College of General Practitioners</h3>
+          <p class="org">FRNZCGP</p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="meta">2001</div>
+        <div class="details">
+          <h3>Hong Kong Medical Council Full Registration</h3>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="meta">2000</div>
+        <div class="details">
+          <h3>Bachelor of Medicine and Bachelor of Surgery (MBChB)</h3>
+          <p class="org">University of Otago, Dunedin, New Zealand</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Skills</h2>
+
+      <article class="entry">
+        <div class="meta">Languages</div>
+        <div class="details">
+          <h3>English, Mandarin, Cantonese</h3>
+          <p class="desc">Fluent across all three languages. Over 17 years serving the Chinese community with a deep understanding of its cultural needs.</p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="meta">Clinical</div>
+        <div class="details">
+          <h3>Minor surgery, cosmetic botox injections</h3>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="meta">IT &amp; Systems</div>
+        <div class="details">
+          <h3>Linux Administration, Networking &amp; Clinic IT</h3>
+          <p class="desc">Design, administration, and support of clinic IT infrastructure using Linux and open-source software, including internal web tools and networking, significantly reducing ongoing operational costs.</p>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer no-print">
+      <span>&copy; 2026 Haida Leung</span>
+    </footer>
+
+  </main>
 </body>
 </html>
