@@ -38,7 +38,7 @@
   .header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-start;
     gap: 1.5rem;
     padding-bottom: 2.75rem;
     border-bottom: 1px solid var(--border);
@@ -69,8 +69,7 @@
     gap: 0.45rem;
   }
   
-  .contact a,
-  .download-link {
+  .contact a {
     color: var(--text-secondary);
     text-decoration: underline;
     text-decoration-thickness: 1px;
@@ -79,29 +78,52 @@
     transition: color 0.15s ease, text-decoration-color 0.15s ease;
   }
   
-  .contact a:hover,
-  .download-link:hover {
+  .contact a:hover {
     color: var(--text);
     text-decoration-color: var(--text);
   }
   
-  .contact a:focus-visible,
-  .download-link:focus-visible {
+  .contact a:focus-visible {
     outline: 2px solid var(--text);
     outline-offset: 4px;
     border-radius: 2px;
   }
   
-  .download-link {
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: var(--text);
-    flex-shrink: 0;
-    white-space: nowrap;
-  }
-  
   .sep {
     color: var(--border);
+  }
+  
+  /* Download Button */
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-top: 0.35rem;
+    padding: 0.45rem 0.9rem;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--text);
+    background-color: #f0efed;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    text-decoration: none;
+    flex-shrink: 0;
+    white-space: nowrap;
+    transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #e7e5e4;
+    border-color: #d6d3d1;
+  }
+  
+  .download-btn:active {
+    transform: translateY(1px);
+  }
+  
+  .download-btn:focus-visible {
+    outline: 2px solid var(--text);
+    outline-offset: 3px;
   }
   
   /* Sections */
@@ -184,6 +206,10 @@
       align-items: flex-start;
       gap: 1.25rem;
       padding-bottom: 2rem;
+    }
+  
+    .download-btn {
+      margin-top: 0;
     }
   
     .section {
